@@ -81,5 +81,9 @@ public class MassiveTest {
 	public void createArrayFromLineWithSpecialSymbols() {
 		actual = massive.createMassive("^&112");
 	}
+	@Test(priority = 10, expectedExceptions = IllegalArgumentException.class)
+	public void createArrayFromLineWithEmptyString() {
+		actual = massive.createMassive("");
+	}
 	
 	}
