@@ -7,7 +7,7 @@ public class NumberChecker {
 		return (hasAllScores(args) && checkForSpecialSymbols(args) && isZeroInFirstNumber(args[0]));
 	}
 
-	private boolean hasAllScores(String[] args) {
+	protected boolean hasAllScores(String[] args) {
 		if (args.length == 0) {
 			System.out.println("Enter values");
 			return false;
@@ -19,7 +19,7 @@ public class NumberChecker {
 			return true;
 	}
 
-	private boolean checkForSpecialSymbols(String[] args) {
+	protected boolean checkForSpecialSymbols(String[] args) {
 		boolean returned = false;
 		String regex = "\\d+";
 		for (String line : args) {
@@ -33,7 +33,7 @@ public class NumberChecker {
 		return returned;
 	}
 
-	private boolean isZeroInFirstNumber(String args) {
+	protected boolean isZeroInFirstNumber(String args) {
 		if (args.equals("0")) {
 			System.out.println("A mustn't be zero");
 			return false;

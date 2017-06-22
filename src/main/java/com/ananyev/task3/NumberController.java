@@ -7,7 +7,7 @@ public class NumberController {
 		return (hasAllScores(args) && checkForSpecialSymbols(args));
 	}
 
-	private boolean hasAllScores(String[] args) {
+	protected boolean hasAllScores(String[] args) {
 		if (args.length == 0) {
 			System.out.println("Enter values");
 			return false;
@@ -19,7 +19,7 @@ public class NumberController {
 			return true;
 	}
 
-	private boolean checkForSpecialSymbols(String[] args) {
+	protected boolean checkForSpecialSymbols(String[] args) {
 		boolean returned = false;
 		String regex = "\\d+";
 		for (String line : args) {

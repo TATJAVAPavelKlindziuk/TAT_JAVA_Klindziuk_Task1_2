@@ -7,13 +7,13 @@ public class CheckerPointPosition {
 		return (checkFirstArea(point) || checkSecondArea(point));
 	}
 
-	private boolean checkSecondArea(Point point) {
+	protected boolean checkSecondArea(Point point) {
 		int x = point.getX();
 		int y = point.getY();
 		return (x >= -4 && x <= 4 && y >= -3 && y <= 0);
 	}
 
-	private boolean checkFirstArea(Point point) {
+	protected boolean checkFirstArea(Point point) {
 		int x = point.getX();
 		int y = point.getY();
 		return (y <= 4 && y > 0 - 3 && x <= 2 && x >= -2);
