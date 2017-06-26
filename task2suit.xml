@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="task2tests" parallel="false">
+    <test name="sample-Test" preserve-order="true" verbose="2">
+        <packages>
+            <package name="com.ananyev.task1.test.*"/>
+            <package name="com.ananyev.task2.test.*"/>
+            <package name="com.ananyev.task3.test.*"/>
+            <package name="com.ananyev.task4.test.*"/>
+            <package name="com.ananyev.task5.test.*"/>
+            <package name="com.ananyev.task6.test.*"/>
+            <package name="com.ananyev.task8.test.*"/>
+        </packages>
+    </test>
+</suite>
